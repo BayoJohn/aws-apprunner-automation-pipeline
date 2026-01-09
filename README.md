@@ -8,18 +8,7 @@ Here is a README structure designed around a "Scenario" and a "Justification" (T
 
 
 
-## AWS App Runner Deployment Flow
-
-```mermaid
-graph LR
-    Local[Local Machine] --> Script[Bash Script]
-    Script --> Docker[Docker Build]
-
-    subgraph AWS[AWS Cloud]
-        Docker --> ECR[Amazon ECR]
-        ECR --> AppRunner[AWS App Runner]
-    end
-```
+![Whisk_4b403f7c72ce964a376441aa2ccb0a38dr](https://github.com/user-attachments/assets/bb7bcaf5-db5e-4a3d-b2a8-69396234eb83)
 
 
 
