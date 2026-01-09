@@ -4,21 +4,24 @@ That is a fantastic way to approach a README! It frames the project as a **techn
 
 Here is a README structure designed around a "Scenario" and a "Justification" (The "Why") for each tool.
 
+
+
+
+
+
+System Architecture
+```mermaid
 graph LR
-    subgraph Your_PC [Local Environment]
-    A[Node.js Code] --> B[Bash Script]
-    B --> C(Docker Build)
-    end
-
-    subgraph AWS_Cloud [AWS Cloud]
-    C --> D[Amazon ECR]
-    D --> E[AWS App Runner]
-    end
-
-    E --> F((Live Website))
+    Local[Local Machine] --> Script[Bash Script]
+    Script --> Docker[Docker Build]
     
-    style E fill:#ff9900,stroke:#232f3e,color:white
-    style D fill:#ff9900,stroke:#232f3e,color:white
+    subgraph AWS_Cloud [AWS Cloud]
+        Docker -- push --> ECR((Amazon ECR))
+        ECR -- trigger --> AppRunner[AWS App Runner]
+    end
+
+    AppRunner --> Web((Live Website))
+
 
 
 
