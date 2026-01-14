@@ -15,6 +15,12 @@ Demonstration of an automated deploment using Apprunner.
 
 ## 📝 The Scenario
 **The Challenge:** I had a Node.js application that needed to be deployed to a scalable, production-ready environment. The goal was to move away from manual server management (like EC2) and create a "push-button" deployment process where code updates could be containerized and shipped to the cloud automatically and securely.
+<img width="1335" height="77" alt="Screenshot 2026-01-09 182054" src="https://github.com/user-attachments/assets/1572e254-754e-47e9-95f0-cdade57907c1" />
+<img width="1314" height="325" alt="Screenshot 2026-01-09 182027" src="https://github.com/user-attachments/assets/1939e34d-5c1a-4567-b386-036ca7acbb01" />
+<img width="1114" height="435" alt="Screenshot 2026-01-09 193138" src="https://github.com/user-attachments/assets/bb6b3274-3fac-4c6b-a789-1e7ee029ba4e" />
+<img width="1080" height="405" alt="Screenshot 2026-01-09 184120" src="https://github.com/user-attachments/assets/eb33ec7c-932b-4690-b787-88f364c78f79" />
+<img width="1070" height="252" alt="Screenshot 2026-01-09 184042" src="https://github.com/user-attachments/assets/e81e8994-33e9-4722-82ec-98e04975c4ca" />
+<img width="621" height="347" alt="Screenshot 2026-01-09 183915" src="https://github.com/user-attachments/assets/52c6080f-a952-43bc-82bb-f04f5858ab1b" />
 
 ---
 
@@ -35,6 +41,7 @@ Demonstration of an automated deploment using Apprunner.
     * It builds the Docker image: `docker build -t node-app .`
     * It tags and pushes the image to your private ECR URI.
 3.  **Deploy**: AWS App Runner detects the new image in ECR and performs a **rolling update**, ensuring zero downtime for the end user.
+
 
 ---
 
