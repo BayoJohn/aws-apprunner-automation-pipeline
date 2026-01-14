@@ -26,10 +26,14 @@ Demonstration of an automated deploment using Apprunner.
 * **Amazon ECR (Elastic Container Registry):** I utilized a private AWS ECR registry over public alternatives to ensure maximum security and performance. By hosting the container images within the same AWS ecosystem as the application, I leveraged **IAM roles** for fine-grained access control, ensuring only authorized services like App Runner can pull images.
 
 <img width="1070" height="252" alt="Screenshot 2026-01-09 184042" src="https://github.com/user-attachments/assets/80539096-70e2-464f-ab63-324500d5e8a8" />
-*Figure 1: Private Amazon ECR repository setup with AES-256 encryption.*
+Figure 1: Private Amazon ECR repository setup with AES-256 encryption.
+
+
+
 
 <img width="1080" height="405" alt="Screenshot 2026-01-09 184120" src="https://github.com/user-attachments/assets/8980dc4d-50ea-4dd8-9c34-69d302803e9b" />
-*Figure 2: Verified Docker image tags in the registry, ready for App Runner deployment.*
+Figure 2: Verified Docker image tags in the registry, ready for App Runner deployment.
+
 
 
   
