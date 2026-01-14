@@ -34,7 +34,7 @@ Figure 2: Verified Docker image tags in the registry, ready for App Runner deplo
 * **AWS App Runner:** This fully managed serverless service was selected to eliminate the overhead of managing EC2 instances or complex VPC configurations. It provides a streamlined "Heroku-like" experience within AWS, automatically handling **auto-scaling, load balancing, and SSL/TLS termination** right out of the box.
 <br>
 
- **Bash Automation:** To eliminate the risk of human error during manual deployments, I engineered a custom shell script to standardize the pipeline. This script automates the entire lifecycle—from AWS authentication and Docker building to image tagging and ECR pushing—ensuring every release is **consistent and repeatable**.
+* **Bash Automation:** To eliminate the risk of human error during manual deployments, I engineered a custom shell script to standardize the pipeline. This script automates the entire lifecycle—from AWS authentication and Docker building to image tagging and ECR pushing—ensuring every release is **consistent and repeatable**.
 <br>
 * **Node.js:** The application is built on Node.js to take advantage of its lightweight, event-driven architecture. This makes it a perfect fit for containerized environments, allowing for fast startup times and efficient resource utilization within the App Runner service.
 
